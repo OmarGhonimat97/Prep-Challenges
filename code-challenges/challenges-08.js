@@ -32,9 +32,10 @@ const customerAndAge = (obj) => {
 let vals = [];
 // let nums = [];
 for (let x in obj) {
-  vals.push(x)
+  vals.push(`Customer Name :${x} , Age :${obj[x]}`)
+
 }
-return [`Customer Name :${vals}, Age :`]
+return vals
 
 // vals.push(x[0], x[1]);
 // nums = vals.slice(-2,-1)[0]
